@@ -103,3 +103,79 @@ input{
   background-color: #ccc;
 }
 
+
+/* responsive design */
+
+@media screen and (max-width: 768px){
+ .g-img{
+  width: 20rem;
+  height: 8rem;
+   object-fit: cover;
+  object-position: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: 10rem; */
+  align-items: center;
+}
+
+.content .search{
+  margin-bottom: 1rem;
+  width: 30rem;
+  height: 4rem;
+  border-radius: 40px;
+  position: relative;
+  /* display: flex; */
+}
+input{
+  width: 20rem;
+  height: 3rem;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  padding: 0px 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search span{
+  position: absolute;
+  color: #ccc;
+  top: 0.5rem;
+  right: 0.5rem;
+  /* font-size: 1.5rem; */
+  right: 35%;
+  /* border-radius: 50%; */
+}
+
+.search span img{
+  width: 2rem;
+  background-color: #ccc;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search span:hover{
+  cursor: pointer;
+}
+
+.content .search input:focus{
+  border: 2px solid #000;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 10rem;
+}
+.buttons button{
+  margin-bottom: 1rem;
+}
+}
